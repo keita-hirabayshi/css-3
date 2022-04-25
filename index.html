@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- viewportとはhtmlの画面のこと。　　　　widthは固定値を設定できもするが、メディアクエリに影響が出る恐れがある。（メディアクエリはviewportの値を元に処理を行なっているため）-->
+    <!-- viewportのcontentは基本device-width(デフォルト値)でOK -->
+    <title>Document</title>
+
+    <!-- レスポンシブデザインの設定方法
+    　　① headタグ内で直接読み込む　　 -->
+    <!-- <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 600px)"> -->
+    <!--     条件式となっており、画面に表示されている n 画面横幅が600px以内であればcssを読み込むといった条件式となる -->
+    <!-- <link rel="stylesheet" href="desktop.css" media="screen and (min-width: 601px)"> -->
+
+    <!-- ②  css内で別のcss,scssを読み込む-->
+    <link rel="stylesheet" href="style.scss">
+</head>
+<body>
+    <h1>test</h1>
+</body>
+</html>

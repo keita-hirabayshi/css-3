@@ -1,0 +1,18 @@
+// パターン２　　importを使ったクエリ
+// @import url('mobile.css') screen and (max-width: 600px) ;
+// @import url('desktop.css') screen and (min-width: 601px) ;
+// scss内で他のcssを読み込む方法
+
+// scssを読み込む場合は、後ろにクエリを記述することはできない
+
+// パターン３ mediaを用いたメディアクエリ　　（これが一番よく使われている。）
+
+// デフォルトでファイルを読み込み、横幅の拡大に応じてファイル内容を上書きすることを「モバイルファースト」と呼ぶ
+// モバイルの方が構造がシンプルなため、小　→ 大　といった読み込み方が設計する上で楽になる。
+@import 'mobile.scss';
+
+// 条件を複数書く場合は、 ,で区切るようにする。
+@media screen and (max-width: 601px)
+,screen and (min-width: 300px){
+    @import 'desktop.scss';
+}
